@@ -1,0 +1,119 @@
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+a {
+    color: #2199df;
+    text-decoration: unset;
+}
+li {
+    margin-left: 1.5rem;
+    list-style: none;
+}
+button,
+input[type=submit] {
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 1em 0;
+}
+/* NavBar */
+.page{
+    padding: 1rem;
+}
+#header {
+    display: flex;
+    background-color: #214bd6;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .title {
+    margin: 0;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+#header .auth-options{
+    display: flex;
+    height: 100%;
+}
+#header .auth-options button {
+    padding: 0 1rem;
+    background: #259fe5;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+#header .auth-options button:hover {
+    background-color: #2753e4;
+}
+/* form */
+.form label,
+.form input {
+    display: block;
+}
+.form input {
+    margin-bottom: 1rem;
+}
+.form label {
+    margin-bottom: 0.2rem;
+}
+.form input[type=text] ,
+.form input[type=password],
+.form input[type=email] {
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    border: 1px solid #c2c2c2;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+.form input:focus {
+    outline: none;
+    border: 1px solid #50a4e9;
+    box-shadow: inset 0px 0px 5px rgba(38, 142, 228, 0.5);
+}
+.form input[type=submit] {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #469720;
+    background-color: #c8ecb7;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+/* error notice */
+.error-notice {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    border: 1px solid #e07c7c;
+    justify-content: space-between;
+    background-color: #f8dcd6;
+}
+.error-notice button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #df4343;
+    color: #ffffff;
+}
+/* media queries */
+@media screen and (max-width: 850px) {
+    #header .title {
+        font-size: 1.2rem;
+    }
+    #header .auth-options button {
+        padding: 0 0.5rem;
+        font-size: 0.8rem;
+    }
+}
